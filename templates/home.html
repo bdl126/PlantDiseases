@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block body %}
+{% include "navbar.html" %}
+<meta charset="UTF-8">
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<section class="hero is-success is-bold is-large">
+  <div class="hero-body">
+    <h2 id="prediction">Prediction</h2>
+  	<img src="https://liber.post-gazette.com/image/2015/06/02/ca4,278,1343,1617/tomato-plant-is-infected-with-septoria-leaf-spot-1.jpg" style="width:250px;height:300px;" alt="not yet" id="img">
+  	<div id="container">
+		<input type='file' name ="image" id="imageUpload"/>
+		<br>
+		<button id='button_Classify'>Classify</button>
+	</div>
+  </div>
+</section>
+{% endblock %}
+{% block scripts %}
+<script src="../static/js/Ascripts.js"></script>
+{% endblock %}
